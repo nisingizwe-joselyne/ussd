@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="container bg-white-800 p-4">
+  <div class="flex">
+    <div class="w-2/6 py-4 ">
+    <button class="text-purple-400 rounded-full border-2 p-2">This our dashbord</button>
+    <p class=" p4-6">
+      <span class="text-black-400  text-4xl font-bold">Make</span><span class="text-purple-400 text-4xl font-bold ">Discussion</span>
+      <span class="text-black-400 text-4xl font-bold">Become more <br>comfortable</span>
+    </p>
+    <p class="text-black-300 text-sm">New and modern way to discuss your problem and get solution</p>
+    <ul class="flex gap-4 p-4">
+      <li><button type="button" class="btn btn-primary text-black" data-toggle="button" aria-pressed="false">
+        Get started
+      </button></li>
+      <li><button type="button" class=" bg-gray-700 text-black border-2 border-back p-2 rounded-lg" data-toggle="button" aria-pressed="false">
+        Learn More
+      </button></li>
+    </ul>
+    </div>
+    <div class="w-4/6 flex">
+    <img src="{% static 'image/vase.jpg' %}" width="100px" height="80px" class="w-2/6 py-20">
+    <img src="{% static 'image/couple.jpg' %}" width="200px" height="100px" class="w-4/6 py-10">
+    </div>
+
+  </div>
+      </div>
+{% endblock content %}
