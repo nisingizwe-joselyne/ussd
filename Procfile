@@ -1,1 +1,0 @@
-web: gunicorn sdf.wsgi --log-file - 
